@@ -14,7 +14,7 @@ import verbs from '../data/verbs.json'
 import grammar from '../data/grammar.json'
 
 const CONTENT = { vocabulary, verbs, grammar }
-const COUNTS = [10, 20].map((value) => ({ value, label: `${value} soal` }))
+const COUNTS = [10, 20, 30].map((value) => ({ value, label: `${value} soal` }))
 
 const formatDate = (iso) =>
   new Date(`${iso}T00:00:00`).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })
@@ -25,10 +25,11 @@ export default function Quiz() {
   const [count, setCount] = useState(10)
   const [kinds, setKinds] = useState(QUIZ_KINDS.map((kind) => kind.id))
   const [topic, setTopic] = useState(null)
+  const [grammarTopic, setGrammarTopic] = useState(null)
   const [session, setSession] = useState(null)
 
   const start = (questions) => setSession({ questions, id: Date.now() })
-  const startNew = () => start(buildQuiz(CONTENT, { count, kinds, topic }))
+  const startNew = () => start(buildQuiz(CONTENT, { count, kinds, topic, grammarTopic }))
 
   const toggleKind = (id) =>
     setKinds((current) => (current.includes(id) ? current.filter((k) => k !== id) : [...current, id]))
@@ -116,6 +117,23 @@ export default function Quiz() {
             label="Topik kosakata"
             allLabel="Semua topik"
           />
+          {kinds.includes('grammar') && (
+            <label className="block">
+              <span className="mb-1.5 block text-sm font-semibold">Topik grammar</span>
+              <select
+                value={grammarTopic ?? ''}
+                onChange={(event) => setGrammarTopic(event.target.value || null)}
+                className="h-11 w-full rounded-xl border border-line bg-surface px-3 text-sm outline-none focus:border-accent-strong"
+              >
+                <option value="">Semua topik grammar</option>
+                {grammar.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.title} ({t.exercises.length})
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <div>
             <p className="mb-1.5 text-sm font-semibold">Jumlah soal</p>
             <Segmented label="Jumlah soal" options={COUNTS} value={count} onChange={setCount} />

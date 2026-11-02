@@ -23,6 +23,8 @@ export const TENSES = [
   { id: 'perfekt', label: 'Perfekt', note: 'lampau' },
 ]
 
+export const auxForm = (aux, pronoun) => AUX[aux][pronoun]
+
 /** "habe gemacht" — or null for verbs whose Perfekt is not used (möchten). */
 export function perfektForm(verb, pronoun) {
   if (!verb.partizip) return null
@@ -52,12 +54,14 @@ export const GENDERS = {
 
 export const POS_LABELS = {
   noun: 'kata benda',
+  name: 'nama negara / bahasa',
   adj: 'kata sifat',
   adv: 'kata keterangan',
   phrase: 'ungkapan',
   number: 'angka',
   question: 'kata tanya',
   conj: 'kata sambung',
+  prep: 'kata depan',
 }
 
 export const withArticle = (word) => (word.article ? `${word.article} ${word.de}` : word.de)
@@ -134,4 +138,5 @@ export const KEY = {
   konj: (id) => `konj:${id}`,
   hoeren: (id) => `hoeren:${id}`,
   grammatik: (id) => `grammatik:${id}`,
+  plural: (id) => `plural:${id}`,
 }

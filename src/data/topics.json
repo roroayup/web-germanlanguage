@@ -1,5 +1,6 @@
 [
   {"id":"begruessung","de":"Begrüßung & Vorstellung","meaning":"Salam & perkenalan","icon":"👋"},
+  {"id":"laender","de":"Länder & Sprachen","meaning":"Negara, bahasa & kebangsaan","icon":"🌍"},
   {"id":"zahlen","de":"Zahlen","meaning":"Angka","icon":"🔢"},
   {"id":"zeit","de":"Zeit & Kalender","meaning":"Waktu, hari & bulan","icon":"🕒"},
   {"id":"familie","de":"Familie & Menschen","meaning":"Keluarga & orang","icon":"👪"},

@@ -23,6 +23,7 @@ const MODES = [
   { label: 'Kosakata', de: 'Wortschatz', items: vocabulary, keyOf: (w) => KEY.card(w.id) },
   { label: 'Kata kerja (flashcard)', de: 'Verben', items: verbs, keyOf: (v) => KEY.card(v.id) },
   { label: 'Artikel', de: 'der/die/das', items: nouns, keyOf: (w) => KEY.artikel(w.id) },
+  { label: 'Bentuk jamak (kuis)', de: 'Plural', items: nouns.filter((w) => w.plural), keyOf: (w) => KEY.plural(w.id) },
   { label: 'Konjugasi', de: 'Konjugation', items: verbs, keyOf: (v) => KEY.konj(v.id) },
   { label: 'Mendengar', de: 'Hören', items: sentences, keyOf: (s) => KEY.hoeren(s.id) },
   { label: 'Latihan grammar', de: 'Grammatik', items: exercises, keyOf: (e) => KEY.grammatik(`${e.topic.id}-${e.i}`) },
@@ -34,6 +35,7 @@ function buildLabels() {
   for (const word of vocabulary) {
     labels[KEY.card(word.id)] = { de: withArticle(word), meaning: word.meaning, mode: 'Kosakata' }
     labels[KEY.artikel(word.id)] = { de: withArticle(word), meaning: word.meaning, mode: 'Artikel' }
+    if (word.plural) labels[KEY.plural(word.id)] = { de: withArticle(word), meaning: `die ${word.plural}`, mode: 'Plural' }
   }
   for (const verb of verbs) {
     labels[KEY.card(verb.id)] = { de: verb.inf, meaning: verb.meaning, mode: 'Kata kerja' }

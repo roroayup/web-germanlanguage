@@ -17,7 +17,7 @@ const [topics, vocabulary, verbs, grammar, sentences] = await Promise.all(
 )
 
 const ARTICLES = ['der', 'die', 'das']
-const POS = ['noun', 'adj', 'adv', 'phrase', 'number', 'question', 'conj']
+const POS = ['noun', 'name', 'adj', 'adv', 'phrase', 'number', 'question', 'conj', 'prep']
 const PRONOUNS = ['ich', 'du', 'er', 'wir', 'ihr', 'sie']
 const topicIds = new Set(topics.map((t) => t.id))
 
@@ -43,6 +43,8 @@ for (const row of vocabulary) {
     if (!/^\p{Lu}/u.test(row.de)) fail(where, `noun must be capitalised → ${row.de}`)
     if (row.plural !== null && !/^\p{Lu}/u.test(row.plural ?? '')) fail(where, `odd plural → ${row.plural}`)
     if (row.pluralOnly && row.article !== 'die') fail(where, 'plural-only nouns take die')
+  } else if (row.pos === 'name' && !/^\p{Lu}/u.test(row.de)) {
+    fail(where, `country and language names are capitalised → ${row.de}`)
   } else if (row.article !== null || row.plural !== null) {
     fail(where, 'only nouns carry an article or plural')
   }

@@ -20,7 +20,7 @@ const FEATURES = [
     icon: 'cards',
     de: 'Vokabeln',
     title: 'Flashcard kosakata',
-    text: 'Kosakata A1 dari 15 topik, lengkap dengan artikel, bentuk jamak, contoh kalimat dan audio.',
+    text: `Kosakata A1 dari ${topics.length} topik, lengkap dengan artikel, bentuk jamak, contoh kalimat dan audio.`,
   },
   {
     to: '/artikel',
@@ -41,7 +41,7 @@ const FEATURES = [
     icon: 'book',
     de: 'Grammatik',
     title: 'Ringkasan tata bahasa',
-    text: '14 topik inti A1 dalam bahasa Indonesia: kasus, urutan kata, negasi, modal, Perfekt, dan lainnya.',
+    text: 'Topik inti A1 dalam bahasa Indonesia: kasus, preposisi, urutan kata, negasi, modal, Perfekt, dan lainnya.',
   },
   {
     to: '/hoeren',
@@ -55,7 +55,7 @@ const FEATURES = [
     icon: 'quiz',
     de: 'Quiz',
     title: 'Kuis campuran',
-    text: 'Gabungan semua materi dalam satu kuis singkat, dengan ringkasan hasil di akhir.',
+    text: 'Tujuh jenis soal, dari arti kata sampai bentuk jamak dan Perfekt, dengan ringkasan hasil di akhir.',
   },
 ]
 

@@ -23,15 +23,15 @@ npm run data:validate  # cek konten di src/data/ saja
 | Halaman | Route | Isi |
 | --- | --- | --- |
 | Beranda | `/` | Landing page, streak, dan jumlah kata yang dikuasai |
-| Vokabeln | `/vokabeln` | Flashcard 265 kata + 59 kata kerja, filter per topik, daftar kata |
-| Artikel-Trainer | `/artikel` | Tebak der/die/das untuk 175 kata benda, dengan petunjuk akhiran dan pengecualiannya |
+| Vokabeln | `/vokabeln` | Flashcard 477 kata + 97 kata kerja, filter per topik, daftar kata |
+| Artikel-Trainer | `/artikel` | Tebak der/die/das untuk 317 kata benda, dengan petunjuk akhiran dan pengecualiannya |
 | Konjugation | `/konjugation` | Ketik bentuk Präsens/Perfekt, plus tabel konjugasi yang bisa dicari |
-| Grammatik | `/grammatik` | 14 topik A1 dengan tabel, contoh berpengucapan, dan latihan |
-| Hören | `/hoeren` | 59 kalimat: mode pilih arti atau dikte, kecepatan lambat/normal |
-| Quiz | `/quiz` | Kuis campuran 5 jenis soal, riwayat 20 kuis terakhir |
+| Grammatik | `/grammatik` | 21 topik A1 dengan tabel, contoh berpengucapan, dan 162 latihan |
+| Hören | `/hoeren` | 119 kalimat: mode pilih arti atau dikte, kecepatan lambat/normal |
+| Quiz | `/quiz` | 7 jenis soal (arti, terjemahan, artikel, jamak, konjugasi, Perfekt, grammar), filter topik, riwayat 20 kuis terakhir |
 | Fortschritt | `/fortschritt` | Statistik, progres per mode dan topik, daftar "sering salah", export/import/reset |
 
-Topik kosakata (15): Begrüßung, Zahlen, Zeit, Familie, Essen & Trinken, Wohnen, Stadt &
+Topik kosakata (16): Begrüßung, Länder & Sprachen, Zahlen, Zeit, Familie, Essen & Trinken, Wohnen, Stadt &
 Verkehr, Einkaufen & Kleidung, Arbeit & Lernen, Freizeit, Körper & Gesundheit, Wetter,
 Reisen, Farben & Eigenschaften, Wichtige Wörter.
 
@@ -67,7 +67,7 @@ Semua materi ada di `src/data/`. Tambahkan baris baru, lalu jalankan `npm run da
  "meaning":"sendok","example":"Ich brauche einen Löffel.","exampleMeaning":"Saya butuh sendok.","topic":"essen"}
 ```
 
-- `pos`: `noun` · `adj` · `adv` · `phrase` · `number` · `question` · `conj`
+- `pos`: `noun` · `name` (negara/bahasa) · `adj` · `adv` · `phrase` · `number` · `question` · `conj` · `prep`
 - `article` dan `plural` hanya untuk `noun` (`plural: null` jika tidak ada bentuk jamak;
   tambahkan `"pluralOnly": true` untuk kata seperti *die Eltern*)
 - `topic` harus salah satu id di `topics.json`

@@ -33,7 +33,12 @@
     "exercises": [
       { "prompt": "Wir ___ aus Indonesien.", "choices": ["sind", "seid", "ist"], "answer": 0, "explain": "wir → sind." },
       { "prompt": "___ du einen Bruder?", "choices": ["Hast", "Hat", "Habt"], "answer": 0, "explain": "du → hast." },
-      { "prompt": "Ihr ___ sehr nett.", "choices": ["seid", "sind", "bist"], "answer": 0, "explain": "ihr → seid." }
+      { "prompt": "Ihr ___ sehr nett.", "choices": ["seid", "sind", "bist"], "answer": 0, "explain": "ihr → seid." },
+      { "prompt": "Das ist Herr Klein. ___ ist Lehrer.", "choices": ["Er", "Sie", "Es"], "answer": 0, "explain": "Herr Klein → er." },
+      { "prompt": "Frau Lopez, ___ Sie aus Spanien?", "choices": ["sind", "ist", "seid"], "answer": 0, "explain": "Sie (formal) → sind." },
+      { "prompt": "Maria und Tom ___ zwei Kinder.", "choices": ["haben", "hat", "habt"], "answer": 0, "explain": "Maria und Tom = sie (jamak) → haben." },
+      { "prompt": "Ich ___ 30 Jahre alt.", "choices": ["bin", "habe", "ist"], "answer": 0, "explain": "Umur memakai sein: ich bin." },
+      { "prompt": "Das Kind ___ Hunger.", "choices": ["hat", "ist", "habt"], "answer": 0, "explain": "das Kind = es → hat. Lapar memakai haben: Hunger haben." }
     ]
   },
   {
@@ -72,7 +77,12 @@
     "exercises": [
       { "prompt": "Er ___ in Hamburg. (wohnen)", "choices": ["wohnt", "wohnst", "wohne"], "answer": 0, "explain": "er → batang + -t." },
       { "prompt": "Du ___ viel. (arbeiten)", "choices": ["arbeitest", "arbeitst", "arbeitet"], "answer": 0, "explain": "Batang -t mendapat -e- tambahan: arbeitest." },
-      { "prompt": "Wie ___ du? (heißen)", "choices": ["heißt", "heißst", "heiße"], "answer": 0, "explain": "Batang -ß hanya mendapat -t pada du." }
+      { "prompt": "Wie ___ du? (heißen)", "choices": ["heißt", "heißst", "heiße"], "answer": 0, "explain": "Batang -ß hanya mendapat -t pada du." },
+      { "prompt": "Wir ___ Deutsch. (lernen)", "choices": ["lernen", "lernt", "lernst"], "answer": 0, "explain": "wir → bentuk infinitif: lernen." },
+      { "prompt": "Ihr ___ in Berlin. (wohnen)", "choices": ["wohnt", "wohnen", "wohnst"], "answer": 0, "explain": "ihr → batang + -t." },
+      { "prompt": "Er ___ auf den Bus. (warten)", "choices": ["wartet", "wart", "warten"], "answer": 0, "explain": "Batang berakhiran -t mendapat -e-: wartet." },
+      { "prompt": "Du ___ sehr gut. (tanzen)", "choices": ["tanzt", "tanzst", "tanzest"], "answer": 0, "explain": "Batang berakhiran -z hanya mendapat -t pada du." },
+      { "prompt": "Was ___ Sie beruflich? (machen)", "choices": ["machen", "macht", "machst"], "answer": 0, "explain": "Sie (formal) → sama dengan infinitif." }
     ]
   },
   {
@@ -106,7 +116,13 @@
     "exercises": [
       { "prompt": "Was ___ du gern? (essen)", "choices": ["isst", "esst", "essst"], "answer": 0, "explain": "essen: e → i pada du: isst." },
       { "prompt": "Sie ___ ein Buch. (lesen)", "choices": ["liest", "lest", "lesst"], "answer": 0, "explain": "lesen: e → ie pada er/sie/es." },
-      { "prompt": "Ihr ___ nach Berlin. (fahren)", "choices": ["fahrt", "fährt", "fährst"], "answer": 0, "explain": "Pada ihr vokal tidak berubah." }
+      { "prompt": "Ihr ___ nach Berlin. (fahren)", "choices": ["fahrt", "fährt", "fährst"], "answer": 0, "explain": "Pada ihr vokal tidak berubah." },
+      { "prompt": "Er ___ gern Filme. (sehen)", "choices": ["sieht", "seht", "siehst"], "answer": 0, "explain": "sehen: e → ie pada er/sie/es." },
+      { "prompt": "___ du Deutsch? (sprechen)", "choices": ["Sprichst", "Sprechst", "Spricht"], "answer": 0, "explain": "sprechen: e → i pada du." },
+      { "prompt": "Das Baby ___. (schlafen)", "choices": ["schläft", "schlaft", "schläfst"], "answer": 0, "explain": "schlafen: a → ä pada er/sie/es." },
+      { "prompt": "Was ___ du? Die Suppe? (nehmen)", "choices": ["nimmst", "nehmst", "nimmt"], "answer": 0, "explain": "nehmen → du nimmst (perubahan e → i dan konsonan)." },
+      { "prompt": "Er ___ mir das Buch. (geben)", "choices": ["gibt", "gebt", "gibst"], "answer": 0, "explain": "geben: e → i pada er/sie/es." },
+      { "prompt": "Sie ___ jeden Morgen. (laufen)", "choices": ["läuft", "lauft", "laufen"], "answer": 0, "explain": "laufen: au → äu pada er/sie/es." }
     ]
   },
   {
@@ -117,7 +133,9 @@
     "sections": [
       {
         "heading": "Kalimat pernyataan",
-        "text": ["Posisi 1 bisa diisi subjek, keterangan waktu, atau objek. Jika bukan subjek, subjek pindah ke belakang kata kerja."],
+        "text": [
+          "Posisi 1 bisa diisi subjek, keterangan waktu, atau objek. Jika bukan subjek, subjek pindah ke belakang kata kerja."
+        ],
         "table": {
           "head": ["Posisi 1", "Posisi 2 (Verb)", "Sisa kalimat"],
           "rows": [
@@ -143,7 +161,52 @@
     "exercises": [
       { "prompt": "Morgen ___ nach Köln.", "choices": ["fahre ich", "ich fahre", "fahren ich"], "answer": 0, "explain": "Morgen di posisi 1 → kata kerja posisi 2, subjek sesudahnya." },
       { "prompt": "Pilih Ja/Nein-Frage yang benar:", "choices": ["Kommst du aus Spanien?", "Du kommst aus Spanien?", "Aus Spanien du kommst?"], "answer": 0, "explain": "Ja/Nein-Frage: kata kerja di posisi 1." },
-      { "prompt": "___ heißt du?", "choices": ["Wie", "Was", "Wer"], "answer": 0, "explain": "Menanyakan nama: Wie heißt du?" }
+      { "prompt": "___ heißt du?", "choices": ["Wie", "Was", "Wer"], "answer": 0, "explain": "Menanyakan nama: Wie heißt du?" },
+      { "prompt": "Pilih kalimat yang benar:", "choices": ["Am Abend sehe ich fern.", "Am Abend ich sehe fern.", "Am Abend fern sehe ich."], "answer": 0, "explain": "Keterangan waktu di posisi 1 → kata kerja di posisi 2, subjek sesudahnya." },
+      { "prompt": "___ wohnst du? – In Hamburg.", "choices": ["Wo", "Woher", "Wohin"], "answer": 0, "explain": "Menanyakan tempat (di mana) → wo." },
+      { "prompt": "___ kommst du? – Aus Indonesien.", "choices": ["Woher", "Wo", "Wann"], "answer": 0, "explain": "Menanyakan asal → woher." },
+      { "prompt": "___ beginnt der Kurs? – Um neun Uhr.", "choices": ["Wann", "Wie", "Was"], "answer": 0, "explain": "Menanyakan waktu → wann." },
+      { "prompt": "Pilih W-Frage yang benar:", "choices": ["Was trinkst du?", "Was du trinkst?", "Trinkst was du?"], "answer": 0, "explain": "W-Frage: kata tanya posisi 1, kata kerja posisi 2." }
+    ]
+  },
+  {
+    "id": "g-konjunktionen",
+    "title": "Konjunktionen: und, aber, oder, denn",
+    "subtitle": "Menggabungkan dua kalimat",
+    "summary": "und, aber, oder, denn dan sondern menghubungkan dua kalimat utama tanpa mengubah urutan kata. Kata sambung ini berada di \"posisi 0\", jadi kata kerja tetap di posisi 2 setelahnya.",
+    "sections": [
+      {
+        "heading": "Posisi 0",
+        "table": {
+          "head": ["Kalimat 1", "Posisi 0", "Kalimat 2 (verb di posisi 2)"],
+          "rows": [
+            ["Ich lerne Deutsch,", "denn", "ich möchte in Berlin studieren."],
+            ["Er ist müde,", "aber", "er geht noch ins Kino."],
+            ["Wir gehen ins Kino", "oder", "wir bleiben zu Hause."],
+            ["Ich trinke Kaffee", "und", "mein Mann trinkt Tee."]
+          ]
+        }
+      },
+      {
+        "heading": "Arti dan penggunaan",
+        "text": [
+          "und = dan · aber = tetapi · oder = atau · denn = karena · sondern = melainkan.",
+          "sondern hanya dipakai setelah kalimat negatif, untuk mengganti informasi yang salah: Nicht Tee, sondern Kaffee."
+        ],
+        "examples": [
+          { "de": "Ich bleibe zu Hause, denn ich bin krank.", "meaning": "Saya tetap di rumah karena saya sakit." },
+          { "de": "Er kommt nicht heute, sondern morgen.", "meaning": "Dia datang bukan hari ini, melainkan besok." }
+        ]
+      }
+    ],
+    "tip": "Sebelum aber, denn dan sondern selalu ada koma. Sebelum und dan oder biasanya tidak.",
+    "exercises": [
+      { "prompt": "Ich bin müde, ___ ich habe schlecht geschlafen.", "choices": ["denn", "aber", "oder"], "answer": 0, "explain": "Alasan → denn (karena)." },
+      { "prompt": "Möchtest du Tee ___ Kaffee?", "choices": ["oder", "aber", "denn"], "answer": 0, "explain": "Pilihan → oder." },
+      { "prompt": "Das Essen ist gut, ___ teuer.", "choices": ["aber", "oder", "denn"], "answer": 0, "explain": "Pertentangan → aber." },
+      { "prompt": "Pilih kalimat yang benar:", "choices": ["Ich bleibe zu Hause, denn ich bin krank.", "Ich bleibe zu Hause, denn bin ich krank.", "Ich bleibe zu Hause, denn krank ich bin."], "answer": 0, "explain": "denn di posisi 0 → urutan kata normal (subjek, verb)." },
+      { "prompt": "Er trinkt keinen Kaffee, ___ Tee.", "choices": ["sondern", "aber", "oder"], "answer": 0, "explain": "Mengganti setelah negasi → sondern." },
+      { "prompt": "Ich spreche Englisch ___ ein bisschen Deutsch.", "choices": ["und", "denn", "sondern"], "answer": 0, "explain": "Menambahkan → und." }
     ]
   },
   {
@@ -154,7 +217,9 @@
     "sections": [
       {
         "heading": "Artikel tentu dan tak tentu",
-        "text": ["Artikel tak tentu (ein/eine) dipakai saat menyebut sesuatu pertama kali. Bentuk jamak selalu memakai die, dan tidak punya artikel tak tentu."],
+        "text": [
+          "Artikel tak tentu (ein/eine) dipakai saat menyebut sesuatu pertama kali. Bentuk jamak selalu memakai die, dan tidak punya artikel tak tentu."
+        ],
         "table": {
           "head": ["", "Maskulin", "Feminin", "Netral", "Plural"],
           "rows": [
@@ -176,14 +241,22 @@
       },
       {
         "heading": "Bentuk jamak",
-        "text": ["Ada beberapa pola: -e (Tage), ¨-e (Stühle), -er / ¨-er (Kinder, Häuser), -n / -en (Lampen, Frauen), -s (Autos), atau tanpa perubahan (Zimmer). Hafalkan bersama katanya."]
+        "text": [
+          "Ada beberapa pola: -e (Tage), ¨-e (Stühle), -er / ¨-er (Kinder, Häuser), -n / -en (Lampen, Frauen), -s (Autos), atau tanpa perubahan (Zimmer). Hafalkan bersama katanya."
+        ]
       }
     ],
     "tip": "Di aplikasi ini warna selalu sama: der = biru, die = merah, das = hijau. Mengingat warna membantu mengingat gender.",
     "exercises": [
       { "prompt": "___ Wohnung ist schön.", "choices": ["Die", "Der", "Das"], "answer": 0, "explain": "Akhiran -ung → feminin." },
       { "prompt": "___ Brötchen ist frisch.", "choices": ["Das", "Der", "Die"], "answer": 0, "explain": "Akhiran -chen → selalu das." },
-      { "prompt": "Ich habe zwei ___.", "choices": ["Kinder", "Kinds", "Kinden"], "answer": 0, "explain": "das Kind → die Kinder." }
+      { "prompt": "Ich habe zwei ___.", "choices": ["Kinder", "Kinds", "Kinden"], "answer": 0, "explain": "das Kind → die Kinder." },
+      { "prompt": "___ Tisch ist neu.", "choices": ["Der", "Die", "Das"], "answer": 0, "explain": "Tisch adalah maskulin: der Tisch." },
+      { "prompt": "Das ist ___ Lampe.", "choices": ["eine", "ein", "einen"], "answer": 0, "explain": "die Lampe → artikel tak tentu: eine." },
+      { "prompt": "___ Universität ist sehr alt.", "choices": ["Die", "Der", "Das"], "answer": 0, "explain": "Akhiran -tät → selalu die." },
+      { "prompt": "Bentuk jamak dari das Buch:", "choices": ["die Bücher", "die Buchs", "die Buche"], "answer": 0, "explain": "das Buch → die Bücher (¨-er)." },
+      { "prompt": "Bentuk jamak dari das Auto:", "choices": ["die Autos", "die Auten", "die Autoe"], "answer": 0, "explain": "Banyak kata serapan berakhiran vokal mendapat -s." },
+      { "prompt": "Ich sehe ein Haus. ___ Haus ist groß.", "choices": ["Das", "Der", "Ein"], "answer": 0, "explain": "Disebut kedua kali → artikel tentu: das Haus." }
     ]
   },
   {
@@ -213,7 +286,12 @@
     "exercises": [
       { "prompt": "Ich habe ___ Zeit.", "choices": ["keine", "nicht", "kein"], "answer": 0, "explain": "Zeit (feminin, tanpa artikel) → keine." },
       { "prompt": "Der Film ist ___ gut.", "choices": ["nicht", "kein", "keine"], "answer": 0, "explain": "Menyangkal kata sifat → nicht." },
-      { "prompt": "Das ist ___ Problem.", "choices": ["kein", "keine", "nicht"], "answer": 0, "explain": "das Problem (netral) + tak tentu → kein." }
+      { "prompt": "Das ist ___ Problem.", "choices": ["kein", "keine", "nicht"], "answer": 0, "explain": "das Problem (netral) + tak tentu → kein." },
+      { "prompt": "Ich trinke ___ Kaffee.", "choices": ["keinen", "nicht", "kein"], "answer": 0, "explain": "der Kaffee sebagai objek (Akkusativ) → keinen." },
+      { "prompt": "Er kommt heute ___.", "choices": ["nicht", "kein", "keine"], "answer": 0, "explain": "Menyangkal kata kerja → nicht." },
+      { "prompt": "Wir haben ___ Auto.", "choices": ["kein", "keine", "nicht"], "answer": 0, "explain": "das Auto (netral) → kein." },
+      { "prompt": "Das ist ___ meine Tasche.", "choices": ["nicht", "keine", "kein"], "answer": 0, "explain": "Kata benda dengan kata ganti milik → nicht." },
+      { "prompt": "Sie hat ___ Geschwister.", "choices": ["keine", "kein", "nicht"], "answer": 0, "explain": "Jamak → keine." }
     ]
   },
   {
@@ -231,7 +309,9 @@
             ["Akkusativ", "den / einen / keinen", "die / eine", "das / ein", "die / –"]
           ]
         },
-        "text": ["Kata kerja yang sering memakai Akkusativ: haben, brauchen, kaufen, möchten, nehmen, sehen, essen, trinken, besuchen, es gibt."],
+        "text": [
+          "Kata kerja yang sering memakai Akkusativ: haben, brauchen, kaufen, möchten, nehmen, sehen, essen, trinken, besuchen, es gibt."
+        ],
         "examples": [
           { "de": "Ich brauche einen Kuli.", "meaning": "Saya butuh pulpen." },
           { "de": "Siehst du den Bus?", "meaning": "Kamu lihat busnya?" },
@@ -242,14 +322,56 @@
         "heading": "Kata ganti di Akkusativ",
         "table": {
           "head": ["Nom.", "ich", "du", "er", "sie", "es", "wir", "ihr", "sie/Sie"],
-          "rows": [["Akk.", "mich", "dich", "ihn", "sie", "es", "uns", "euch", "sie/Sie"]]
+          "rows": [
+            ["Akk.", "mich", "dich", "ihn", "sie", "es", "uns", "euch", "sie/Sie"]
+          ]
         }
       }
     ],
     "exercises": [
       { "prompt": "Ich kaufe ___ Tisch.", "choices": ["einen", "ein", "eine"], "answer": 0, "explain": "der Tisch → Akkusativ: einen." },
       { "prompt": "Wir besuchen ___ Oma.", "choices": ["die", "den", "der"], "answer": 0, "explain": "Feminin tidak berubah di Akkusativ." },
-      { "prompt": "Kennst du ___? (er)", "choices": ["ihn", "ihm", "er"], "answer": 0, "explain": "er → Akkusativ: ihn." }
+      { "prompt": "Kennst du ___? (er)", "choices": ["ihn", "ihm", "er"], "answer": 0, "explain": "er → Akkusativ: ihn." },
+      { "prompt": "Ich habe ___ Bruder.", "choices": ["einen", "ein", "eine"], "answer": 0, "explain": "der Bruder → Akkusativ: einen." },
+      { "prompt": "Wir brauchen ___ Stuhl.", "choices": ["einen", "ein", "eine"], "answer": 0, "explain": "der Stuhl → Akkusativ: einen." },
+      { "prompt": "Sie kauft ___ Kleid.", "choices": ["ein", "einen", "eine"], "answer": 0, "explain": "das Kleid tidak berubah di Akkusativ." },
+      { "prompt": "Ich liebe ___. (du)", "choices": ["dich", "dir", "du"], "answer": 0, "explain": "du → Akkusativ: dich." },
+      { "prompt": "Er besucht ___ am Sonntag. (wir)", "choices": ["uns", "euch", "wir"], "answer": 0, "explain": "wir → Akkusativ: uns." },
+      { "prompt": "Es gibt hier ___ Park.", "choices": ["einen", "ein", "der"], "answer": 0, "explain": "es gibt selalu + Akkusativ: einen Park." }
+    ]
+  },
+  {
+    "id": "g-akk-praepositionen",
+    "title": "Präpositionen mit Akkusativ",
+    "subtitle": "für, ohne, durch, gegen, um",
+    "summary": "Setelah preposisi für, ohne, durch, gegen dan um selalu dipakai Akkusativ. Seperti biasa, yang berubah hanya maskulin: der → den, ein → einen.",
+    "sections": [
+      {
+        "heading": "Arti dan contoh",
+        "table": {
+          "head": ["Präposition", "Arti", "Contoh"],
+          "rows": [
+            ["für", "untuk", "Das Geschenk ist für meinen Vater."],
+            ["ohne", "tanpa", "Ich fahre ohne meinen Bruder."],
+            ["durch", "melalui, menembus", "Wir gehen durch den Park."],
+            ["gegen", "melawan; sekitar (waktu)", "Wir spielen gegen Bayern. Ich komme gegen acht."],
+            ["um", "mengelilingi; pukul", "Wir sitzen um den Tisch. Um neun Uhr."]
+          ]
+        },
+        "examples": [
+          { "de": "Ich habe ein Geschenk für dich.", "meaning": "Aku punya hadiah untukmu." },
+          { "de": "Ich trinke Kaffee ohne Zucker.", "meaning": "Saya minum kopi tanpa gula." }
+        ]
+      }
+    ],
+    "tip": "Hafalkan sebagai satu rangkaian: \"für, ohne, durch, gegen, um\" → semua Akkusativ.",
+    "exercises": [
+      { "prompt": "Das Geschenk ist für ___ Vater.", "choices": ["meinen", "meinem", "mein"], "answer": 0, "explain": "für + Akkusativ; der Vater → meinen." },
+      { "prompt": "Ich gehe nicht ohne ___ Freund.", "choices": ["meinen", "meinem", "mein"], "answer": 0, "explain": "ohne + Akkusativ → meinen Freund." },
+      { "prompt": "Wir gehen durch ___ Park.", "choices": ["den", "dem", "der"], "answer": 0, "explain": "durch + Akkusativ; der Park → den Park." },
+      { "prompt": "Ich habe ein Buch für ___. (du)", "choices": ["dich", "dir", "du"], "answer": 0, "explain": "für + Akkusativ: dich." },
+      { "prompt": "Die Kinder sitzen um ___ Tisch.", "choices": ["den", "dem", "der"], "answer": 0, "explain": "um + Akkusativ → den Tisch." },
+      { "prompt": "Pilih yang benar:", "choices": ["ohne mich", "ohne mir", "ohne ich"], "answer": 0, "explain": "ohne + Akkusativ: mich." }
     ]
   },
   {
@@ -267,7 +389,9 @@
             ["Dativ", "dem / einem", "der / einer", "dem / einem", "den (+n)"]
           ]
         },
-        "text": ["Bentuk singkat yang sangat umum: zu + dem = zum, zu + der = zur, bei + dem = beim, von + dem = vom, in + dem = im, an + dem = am."],
+        "text": [
+          "Bentuk singkat yang sangat umum: zu + dem = zum, zu + der = zur, bei + dem = beim, von + dem = vom, in + dem = im, an + dem = am."
+        ],
         "examples": [
           { "de": "Ich fahre mit dem Bus.", "meaning": "Saya naik bus." },
           { "de": "Ich gehe zum Arzt und dann zur Bank.", "meaning": "Saya pergi ke dokter lalu ke bank." },
@@ -277,13 +401,100 @@
       },
       {
         "heading": "Wo? dan Wohin?",
-        "text": ["Wo? (di mana) → Dativ: Ich bin im Park. Wohin? (ke mana) → Akkusativ: Ich gehe in den Park. Untuk kota dan negara tanpa artikel: nach Berlin, in Berlin."]
+        "text": [
+          "Wo? (di mana) → Dativ: Ich bin im Park. Wohin? (ke mana) → Akkusativ: Ich gehe in den Park. Untuk kota dan negara tanpa artikel: nach Berlin, in Berlin."
+        ]
       }
     ],
     "exercises": [
       { "prompt": "Ich fahre mit ___ Fahrrad.", "choices": ["dem", "das", "den"], "answer": 0, "explain": "mit + Dativ; das Fahrrad → dem Fahrrad." },
       { "prompt": "Wir gehen ___ Supermarkt.", "choices": ["zum", "zur", "zu die"], "answer": 0, "explain": "der Supermarkt → zu + dem = zum." },
-      { "prompt": "Sie wohnt bei ___ Eltern.", "choices": ["ihren", "ihre", "ihrer"], "answer": 0, "explain": "bei + Dativ plural → ihren Eltern." }
+      { "prompt": "Sie wohnt bei ___ Eltern.", "choices": ["ihren", "ihre", "ihrer"], "answer": 0, "explain": "bei + Dativ plural → ihren Eltern." },
+      { "prompt": "Ich komme aus ___ Türkei.", "choices": ["der", "die", "dem"], "answer": 0, "explain": "aus + Dativ; die Türkei → der Türkei." },
+      { "prompt": "Wir fahren mit ___ Zug.", "choices": ["dem", "den", "der"], "answer": 0, "explain": "mit + Dativ; der Zug → dem Zug." },
+      { "prompt": "Ich gehe ___ Bank.", "choices": ["zur", "zum", "zu die"], "answer": 0, "explain": "die Bank → zu + der = zur." },
+      { "prompt": "Er wohnt seit ___ Monat hier.", "choices": ["einem", "einen", "ein"], "answer": 0, "explain": "seit + Dativ; der Monat → einem Monat." },
+      { "prompt": "Ich fahre morgen ___ Berlin.", "choices": ["nach", "zu", "in"], "answer": 0, "explain": "Ke kota atau negara tanpa artikel → nach." },
+      { "prompt": "Das Geschenk ist von ___ Lehrerin.", "choices": ["der", "die", "dem"], "answer": 0, "explain": "von + Dativ; die Lehrerin → der Lehrerin." }
+    ]
+  },
+  {
+    "id": "g-dativ-pronomen",
+    "title": "Dativ-Pronomen & Verben mit Dativ",
+    "subtitle": "mir, dir, ihm … helfen, gefallen, schmecken",
+    "summary": "Beberapa kata kerja selalu memakai Dativ untuk orangnya, misalnya helfen, gefallen, schmecken, gehören, danken. Ungkapan sehari-hari seperti \"Wie geht es dir?\" juga memakai Dativ.",
+    "sections": [
+      {
+        "heading": "Kata ganti di Dativ",
+        "table": {
+          "head": ["Nom.", "ich", "du", "er", "sie", "es", "wir", "ihr", "sie/Sie"],
+          "rows": [
+            ["Akk.", "mich", "dich", "ihn", "sie", "es", "uns", "euch", "sie/Sie"],
+            ["Dat.", "mir", "dir", "ihm", "ihr", "ihm", "uns", "euch", "ihnen/Ihnen"]
+          ]
+        }
+      },
+      {
+        "heading": "Kata kerja dengan Dativ",
+        "text": [
+          "Dengan gefallen dan schmecken, yang disukai menjadi subjek: \"Das Kleid gefällt mir\" berarti \"Saya suka gaun itu\" (harfiah: gaun itu menyenangkan bagi saya)."
+        ],
+        "examples": [
+          { "de": "Kannst du mir helfen?", "meaning": "Bisakah kamu membantuku?" },
+          { "de": "Die Jacke gefällt mir.", "meaning": "Saya suka jaket itu." },
+          { "de": "Schmeckt dir die Suppe?", "meaning": "Apakah supnya enak menurutmu?" },
+          { "de": "Das Buch gehört ihm.", "meaning": "Buku itu miliknya." },
+          { "de": "Es tut mir leid.", "meaning": "Saya minta maaf." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "prompt": "Kannst du ___ helfen? (ich)", "choices": ["mir", "mich", "ich"], "answer": 0, "explain": "helfen + Dativ: mir." },
+      { "prompt": "Das Kleid gefällt ___. (sie, perempuan)", "choices": ["ihr", "sie", "ihm"], "answer": 0, "explain": "gefallen + Dativ; sie (dia perempuan) → ihr." },
+      { "prompt": "Wie geht es ___? (du)", "choices": ["dir", "dich", "du"], "answer": 0, "explain": "Wie geht es + Dativ: dir." },
+      { "prompt": "Die Suppe schmeckt ___ nicht. (er)", "choices": ["ihm", "ihn", "er"], "answer": 0, "explain": "schmecken + Dativ; er → ihm." },
+      { "prompt": "Wem gehört das Handy? – Es gehört ___. (wir)", "choices": ["uns", "euch", "wir"], "answer": 0, "explain": "gehören + Dativ; wir → uns." },
+      { "prompt": "Ich danke ___ für die Hilfe. (Sie)", "choices": ["Ihnen", "Sie", "Ihr"], "answer": 0, "explain": "danken + Dativ; Sie → Ihnen." }
+    ]
+  },
+  {
+    "id": "g-wechselpraepositionen",
+    "title": "Wechselpräpositionen",
+    "subtitle": "in, an, auf … — Wo? atau Wohin?",
+    "summary": "Sembilan preposisi bisa memakai Dativ atau Akkusativ: in, an, auf, unter, über, vor, hinter, neben, zwischen. Pertanyaan Wo? (posisi) → Dativ. Pertanyaan Wohin? (arah/gerakan) → Akkusativ.",
+    "sections": [
+      {
+        "heading": "Posisi atau arah",
+        "table": {
+          "head": ["", "Wo? (Dativ)", "Wohin? (Akkusativ)"],
+          "rows": [
+            ["in", "Ich bin im Kino.", "Ich gehe ins Kino."],
+            ["auf", "Das Buch liegt auf dem Tisch.", "Ich lege das Buch auf den Tisch."],
+            ["an", "Das Bild hängt an der Wand.", "Ich hänge das Bild an die Wand."],
+            ["unter", "Die Katze ist unter dem Bett.", "Die Katze läuft unter das Bett."]
+          ]
+        },
+        "text": ["Bentuk singkat: in + dem = im, in + das = ins, an + dem = am, an + das = ans."]
+      },
+      {
+        "heading": "Arti",
+        "text": [
+          "in = di dalam · an = di (menempel pada sisi) · auf = di atas (menempel) · unter = di bawah · über = di atas (tidak menempel) · vor = di depan · hinter = di belakang · neben = di samping · zwischen = di antara."
+        ],
+        "examples": [
+          { "de": "Die Apotheke ist neben der Bank.", "meaning": "Apoteknya di sebelah bank." },
+          { "de": "Wir fahren am Wochenende ans Meer.", "meaning": "Akhir pekan ini kami pergi ke laut." }
+        ]
+      }
+    ],
+    "tip": "Kata kerja posisi (sein, liegen, stehen, hängen) → Dativ. Kata kerja gerakan (gehen, fahren, legen, stellen) → Akkusativ.",
+    "exercises": [
+      { "prompt": "Das Buch liegt auf ___ Tisch.", "choices": ["dem", "den", "der"], "answer": 0, "explain": "Posisi (Wo?) → Dativ: dem Tisch." },
+      { "prompt": "Ich lege das Buch auf ___ Tisch.", "choices": ["den", "dem", "der"], "answer": 0, "explain": "Gerakan (Wohin?) → Akkusativ: den Tisch." },
+      { "prompt": "Wir sind gerade ___ Kino.", "choices": ["im", "ins", "in die"], "answer": 0, "explain": "Posisi → in + dem = im." },
+      { "prompt": "Wir gehen heute Abend ___ Kino.", "choices": ["ins", "im", "in dem"], "answer": 0, "explain": "Arah → in + das = ins." },
+      { "prompt": "Das Bild hängt an ___ Wand.", "choices": ["der", "die", "dem"], "answer": 0, "explain": "Posisi; die Wand → Dativ: der Wand." },
+      { "prompt": "Die Katze schläft unter ___ Bett.", "choices": ["dem", "das", "den"], "answer": 0, "explain": "Posisi; das Bett → Dativ: dem Bett." }
     ]
   },
   {
@@ -316,7 +527,12 @@
     "exercises": [
       { "prompt": "Das ist ___ Mutter. (ich)", "choices": ["meine", "mein", "meinen"], "answer": 0, "explain": "die Mutter → meine." },
       { "prompt": "Anna und ___ Mann wohnen in Wien.", "choices": ["ihr", "sein", "ihre"], "answer": 0, "explain": "Pemilik perempuan (Anna) + der Mann → ihr." },
-      { "prompt": "Wo ist ___ Auto? (du)", "choices": ["dein", "deine", "deinen"], "answer": 0, "explain": "das Auto → dein." }
+      { "prompt": "Wo ist ___ Auto? (du)", "choices": ["dein", "deine", "deinen"], "answer": 0, "explain": "das Auto → dein." },
+      { "prompt": "Wie ist ___ Name? (Sie)", "choices": ["Ihr", "Sie", "Ihre"], "answer": 0, "explain": "Sie → Ihr (kapital); der Name → tanpa akhiran." },
+      { "prompt": "Das sind ___ Kinder. (wir)", "choices": ["unsere", "unser", "unseren"], "answer": 0, "explain": "Jamak → unsere." },
+      { "prompt": "Tom sucht ___ Schwester.", "choices": ["seine", "sein", "ihre"], "answer": 0, "explain": "Pemilik laki-laki (Tom) + die Schwester → seine." },
+      { "prompt": "Wo ist ___ Lehrer? (ihr)", "choices": ["euer", "eure", "ihr"], "answer": 0, "explain": "ihr (kalian) → euer; der Lehrer → tanpa akhiran." },
+      { "prompt": "Ich besuche heute ___ Oma.", "choices": ["meine", "meinen", "mein"], "answer": 0, "explain": "die Oma (feminin) tetap meine di Akkusativ." }
     ]
   },
   {
@@ -355,7 +571,13 @@
     "exercises": [
       { "prompt": "Ich ___ heute nicht kommen.", "choices": ["kann", "kanne", "könne"], "answer": 0, "explain": "können → ich kann." },
       { "prompt": "Du musst mehr ___.", "choices": ["schlafen", "schläfst", "schlaft"], "answer": 0, "explain": "Kata kerja utama di akhir dalam bentuk infinitif." },
-      { "prompt": "Hier ___ man nicht parken.", "choices": ["darf", "dürft", "darfst"], "answer": 0, "explain": "man → seperti er/sie/es: darf." }
+      { "prompt": "Hier ___ man nicht parken.", "choices": ["darf", "dürft", "darfst"], "answer": 0, "explain": "man → seperti er/sie/es: darf." },
+      { "prompt": "___ du mir helfen?", "choices": ["Kannst", "Kann", "Könnt"], "answer": 0, "explain": "können → du kannst." },
+      { "prompt": "Wir ___ morgen früh aufstehen.", "choices": ["müssen", "muss", "müsst"], "answer": 0, "explain": "müssen → wir müssen." },
+      { "prompt": "Ich ___ einen Tee, bitte.", "choices": ["möchte", "möchtest", "möchten"], "answer": 0, "explain": "möchten → ich möchte." },
+      { "prompt": "Er will Arzt ___.", "choices": ["werden", "wird", "wirst"], "answer": 0, "explain": "Dengan modal, kata kerja utama di akhir dalam bentuk infinitif." },
+      { "prompt": "Pilih kalimat yang benar:", "choices": ["Ich muss heute arbeiten.", "Ich muss arbeiten heute.", "Ich arbeiten muss heute."], "answer": 0, "explain": "Modal di posisi 2, infinitif di akhir kalimat." },
+      { "prompt": "Ihr ___ hier nicht rauchen.", "choices": ["dürft", "darf", "dürfen"], "answer": 0, "explain": "dürfen → ihr dürft." }
     ]
   },
   {
@@ -382,7 +604,13 @@
     "exercises": [
       { "prompt": "Der Film ___ um acht ___.", "choices": ["fängt … an", "anfängt … –", "fangt … an"], "answer": 0, "explain": "anfangen: fängt di posisi 2, an di akhir." },
       { "prompt": "Ich möchte heute ___.", "choices": ["einkaufen", "kaufe ein", "ein kaufen"], "answer": 0, "explain": "Dengan modal, kata kerja utuh di akhir." },
-      { "prompt": "Wann ___ der Zug ___?", "choices": ["kommt … an", "ankommt … –", "kommen … an"], "answer": 0, "explain": "ankommen → der Zug kommt … an." }
+      { "prompt": "Wann ___ der Zug ___?", "choices": ["kommt … an", "ankommt … –", "kommen … an"], "answer": 0, "explain": "ankommen → der Zug kommt … an." },
+      { "prompt": "Ich ___ um sieben Uhr ___.", "choices": ["stehe … auf", "aufstehe … –", "steht … auf"], "answer": 0, "explain": "aufstehen → ich stehe … auf." },
+      { "prompt": "Wann ___ du mich ___?", "choices": ["rufst … an", "anrufst … –", "ruft … an"], "answer": 0, "explain": "anrufen → du rufst … an." },
+      { "prompt": "Er sieht jeden Abend ___.", "choices": ["fern", "fernsehen", "gefern"], "answer": 0, "explain": "fernsehen → er sieht … fern." },
+      { "prompt": "Wir müssen morgen ___.", "choices": ["einkaufen", "kaufen ein", "ein kaufen"], "answer": 0, "explain": "Dengan modal, kata kerja trennbar utuh di akhir." },
+      { "prompt": "Kommst du heute Abend ___?", "choices": ["mit", "mitkommen", "zu"], "answer": 0, "explain": "mitkommen → kommst du … mit?" },
+      { "prompt": "In Frankfurt ___ wir ___.", "choices": ["steigen … um", "umsteigen … –", "steigt … um"], "answer": 0, "explain": "umsteigen → wir steigen … um." }
     ]
   },
   {
@@ -419,7 +647,49 @@
     "exercises": [
       { "prompt": "Ich ___ gestern Fußball gespielt.", "choices": ["habe", "bin", "hat"], "answer": 0, "explain": "spielen → haben." },
       { "prompt": "Sie ist nach Hause ___.", "choices": ["gegangen", "gegeht", "gehen"], "answer": 0, "explain": "gehen → gegangen (tidak beraturan)." },
-      { "prompt": "Wir haben am Samstag ___.", "choices": ["eingekauft", "geeinkauft", "einkauft"], "answer": 0, "explain": "Awalan dapat dipisah + ge-: eingekauft." }
+      { "prompt": "Wir haben am Samstag ___.", "choices": ["eingekauft", "geeinkauft", "einkauft"], "answer": 0, "explain": "Awalan dapat dipisah + ge-: eingekauft." },
+      { "prompt": "Er ___ nach Hamburg gefahren.", "choices": ["ist", "hat", "bin"], "answer": 0, "explain": "fahren (berpindah tempat) → sein: er ist." },
+      { "prompt": "Wir haben Pizza ___.", "choices": ["gegessen", "geessen", "gegesst"], "answer": 0, "explain": "essen → gegessen (tidak beraturan)." },
+      { "prompt": "Ich habe gestern Deutsch ___.", "choices": ["gelernt", "gelernen", "lernt"], "answer": 0, "explain": "lernen (beraturan) → gelernt." },
+      { "prompt": "Hast du den Film ___?", "choices": ["gesehen", "gesieht", "gesahen"], "answer": 0, "explain": "sehen → gesehen." },
+      { "prompt": "Sie hat in Berlin ___.", "choices": ["studiert", "gestudiert", "studieren"], "answer": 0, "explain": "Kata kerja -ieren tanpa ge-: studiert." },
+      { "prompt": "Wann ___ du heute aufgestanden?", "choices": ["bist", "hast", "ist"], "answer": 0, "explain": "aufstehen (perubahan keadaan) → sein: du bist." }
+    ]
+  },
+  {
+    "id": "g-praeteritum-sein-haben",
+    "title": "Präteritum: war & hatte",
+    "subtitle": "Masa lalu dari sein dan haben",
+    "summary": "Untuk sein dan haben, orang Jerman jarang memakai Perfekt. Mereka memakai bentuk Präteritum: war (dulu ada/adalah) dan hatte (dulu punya).",
+    "sections": [
+      {
+        "heading": "Konjugasi",
+        "table": {
+          "head": ["", "sein", "haben"],
+          "rows": [
+            ["ich", "war", "hatte"],
+            ["du", "warst", "hattest"],
+            ["er/sie/es", "war", "hatte"],
+            ["wir", "waren", "hatten"],
+            ["ihr", "wart", "hattet"],
+            ["sie/Sie", "waren", "hatten"]
+          ]
+        },
+        "examples": [
+          { "de": "Gestern war ich im Kino.", "meaning": "Kemarin saya ke bioskop." },
+          { "de": "Wir hatten keine Zeit.", "meaning": "Kami tidak punya waktu." },
+          { "de": "Wie war der Urlaub?", "meaning": "Bagaimana liburannya?" }
+        ]
+      }
+    ],
+    "tip": "Sama seperti Modalverben, bentuk ich dan er/sie/es selalu sama: ich war, er war.",
+    "exercises": [
+      { "prompt": "Gestern ___ ich krank.", "choices": ["war", "bin", "hatte"], "answer": 0, "explain": "Masa lalu dari sein: ich war." },
+      { "prompt": "Wo ___ du am Wochenende?", "choices": ["warst", "war", "wart"], "answer": 0, "explain": "du → warst." },
+      { "prompt": "Wir ___ keine Zeit.", "choices": ["hatten", "hattet", "waren"], "answer": 0, "explain": "Masa lalu dari haben: wir hatten." },
+      { "prompt": "Das Wetter ___ schön.", "choices": ["war", "waren", "hatte"], "answer": 0, "explain": "das Wetter = es → war." },
+      { "prompt": "Wo ___ ihr im Urlaub?", "choices": ["wart", "waren", "warst"], "answer": 0, "explain": "ihr → wart." },
+      { "prompt": "Er ___ gestern Kopfschmerzen.", "choices": ["hatte", "war", "hatten"], "answer": 0, "explain": "Kopfschmerzen haben → er hatte." }
     ]
   },
   {
@@ -438,7 +708,9 @@
             ["Sie", "Kommen Sie!", "Nehmen Sie!", "Stehen Sie auf!", "Seien Sie!"]
           ]
         },
-        "text": ["Bentuk du: ambil bentuk du-Präsens lalu hapus -st (du nimmst → Nimm!). Perubahan a → ä tidak dipakai: du fährst → Fahr!"],
+        "text": [
+          "Bentuk du: ambil bentuk du-Präsens lalu hapus -st (du nimmst → Nimm!). Perubahan a → ä tidak dipakai: du fährst → Fahr!"
+        ],
         "examples": [
           { "de": "Komm bitte her!", "meaning": "Tolong ke sini!" },
           { "de": "Sprechen Sie bitte langsam.", "meaning": "Tolong bicara pelan-pelan." }
@@ -448,7 +720,12 @@
     "exercises": [
       { "prompt": "(du, lesen) ___ den Text!", "choices": ["Lies", "Lest", "Lesen"], "answer": 0, "explain": "du liest → Lies!" },
       { "prompt": "(Sie, warten) ___ bitte hier!", "choices": ["Warten Sie", "Wartet", "Warte"], "answer": 0, "explain": "Bentuk Sie: infinitif + Sie." },
-      { "prompt": "(du, fahren) ___ langsam!", "choices": ["Fahr", "Fähr", "Fährst"], "answer": 0, "explain": "a → ä tidak dipakai pada imperatif: Fahr!" }
+      { "prompt": "(du, fahren) ___ langsam!", "choices": ["Fahr", "Fähr", "Fährst"], "answer": 0, "explain": "a → ä tidak dipakai pada imperatif: Fahr!" },
+      { "prompt": "(du, kommen) ___ bitte pünktlich!", "choices": ["Komm", "Kommst", "Kommt"], "answer": 0, "explain": "du kommst → Komm!" },
+      { "prompt": "(ihr, sein) ___ bitte leise!", "choices": ["Seid", "Sind", "Seien"], "answer": 0, "explain": "sein → ihr: Seid!" },
+      { "prompt": "(Sie, nehmen) ___ Platz, bitte.", "choices": ["Nehmen Sie", "Nimm", "Nehmt"], "answer": 0, "explain": "Bentuk Sie: infinitif + Sie." },
+      { "prompt": "(du, essen) ___ dein Gemüse!", "choices": ["Iss", "Ess", "Esst"], "answer": 0, "explain": "du isst → Iss! (perubahan e → i tetap dipakai)." },
+      { "prompt": "(du, aufstehen) ___, es ist spät!", "choices": ["Steh auf", "Aufsteh", "Stehst auf"], "answer": 0, "explain": "Awalan trennbar tetap pindah ke akhir: Steh auf!" }
     ]
   },
   {
@@ -459,7 +736,9 @@
     "sections": [
       {
         "heading": "Wie spät ist es?",
-        "text": ["Dalam percakapan, halb berarti 'setengah menuju' jam berikutnya: halb acht = 7.30, bukan 8.30."],
+        "text": [
+          "Dalam percakapan, halb berarti 'setengah menuju' jam berikutnya: halb acht = 7.30, bukan 8.30."
+        ],
         "table": {
           "head": ["Jam", "Formal", "Percakapan"],
           "rows": [
@@ -490,7 +769,89 @@
     "exercises": [
       { "prompt": "Der Kurs beginnt ___ neun Uhr.", "choices": ["um", "am", "im"], "answer": 0, "explain": "Jam → um." },
       { "prompt": "___ Sommer fahren wir ans Meer.", "choices": ["Im", "Am", "Um"], "answer": 0, "explain": "Musim → im." },
-      { "prompt": "Es ist halb drei. Itu jam …", "choices": ["2.30", "3.30", "3.00"], "answer": 0, "explain": "halb drei = setengah menuju tiga = 2.30." }
+      { "prompt": "Es ist halb drei. Itu jam …", "choices": ["2.30", "3.30", "3.00"], "answer": 0, "explain": "halb drei = setengah menuju tiga = 2.30." },
+      { "prompt": "Wir treffen uns ___ Freitag.", "choices": ["am", "um", "im"], "answer": 0, "explain": "Hari → am." },
+      { "prompt": "Es ist Viertel nach acht. Itu jam …", "choices": ["8.15", "7.45", "8.45"], "answer": 0, "explain": "Viertel nach acht = seperempat lewat delapan." },
+      { "prompt": "Mein Geburtstag ist ___ Juli.", "choices": ["im", "am", "um"], "answer": 0, "explain": "Bulan → im." },
+      { "prompt": "___ Abend gehe ich ins Kino.", "choices": ["Am", "Im", "Um"], "answer": 0, "explain": "Bagian hari → am." },
+      { "prompt": "Es ist Viertel vor zehn. Itu jam …", "choices": ["9.45", "10.15", "10.45"], "answer": 0, "explain": "Viertel vor zehn = seperempat sebelum sepuluh." },
+      { "prompt": "Der Zug kommt ___ 14 Uhr an.", "choices": ["um", "am", "im"], "answer": 0, "explain": "Jam → um." }
+    ]
+  },
+  {
+    "id": "g-datum",
+    "title": "Ordinalzahlen & Datum",
+    "subtitle": "der erste, am dritten Mai",
+    "summary": "Bilangan urutan dibentuk dengan menambah -te (1–19) atau -ste (mulai 20) pada angka. Dengan \"am\" (pada tanggal) akhirannya menjadi -ten / -sten.",
+    "sections": [
+      {
+        "heading": "Pembentukan",
+        "table": {
+          "head": ["Angka", "Heute ist der …", "am …"],
+          "rows": [
+            ["1.", "erste", "ersten"],
+            ["2.", "zweite", "zweiten"],
+            ["3.", "dritte", "dritten"],
+            ["4.", "vierte", "vierten"],
+            ["7.", "siebte", "siebten"],
+            ["8.", "achte", "achten"],
+            ["20.", "zwanzigste", "zwanzigsten"],
+            ["31.", "einunddreißigste", "einunddreißigsten"]
+          ]
+        },
+        "text": [
+          "Bentuk tidak beraturan hanya erste, dritte, siebte dan achte. Dalam tulisan, tanggal ditulis dengan titik: der 3. Mai, am 24.12."
+        ],
+        "examples": [
+          { "de": "Heute ist der erste April.", "meaning": "Hari ini tanggal satu April." },
+          { "de": "Mein Geburtstag ist am zwölften Juni.", "meaning": "Ulang tahun saya tanggal dua belas Juni." },
+          { "de": "Wir wohnen im zweiten Stock.", "meaning": "Kami tinggal di lantai dua." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "prompt": "Heute ist der ___ Mai. (1.)", "choices": ["erste", "einste", "eins"], "answer": 0, "explain": "1. → erste (tidak beraturan)." },
+      { "prompt": "Mein Geburtstag ist am ___ Juni. (3.)", "choices": ["dritten", "dreiten", "dritte"], "answer": 0, "explain": "3. → dritte; setelah am → dritten." },
+      { "prompt": "Mittwoch ist der ___ Tag der Woche. (3.)", "choices": ["dritte", "dreite", "dritten"], "answer": 0, "explain": "der … Tag → dritte." },
+      { "prompt": "Heute ist der ___ März. (20.)", "choices": ["zwanzigste", "zwanzigte", "zwanzig"], "answer": 0, "explain": "Mulai 20 → -ste." },
+      { "prompt": "Am ___ Dezember ist Weihnachten. (25.)", "choices": ["fünfundzwanzigsten", "fünfundzwanzigten", "fünfundzwanzig"], "answer": 0, "explain": "Mulai 20 → -ste; setelah am → -sten." },
+      { "prompt": "Heute ist der ___ Juli. (7.)", "choices": ["siebte", "siebzte", "siebenste"], "answer": 0, "explain": "7. → siebte (tidak beraturan)." }
+    ]
+  },
+  {
+    "id": "g-gern-vergleich",
+    "title": "gern, lieber, am liebsten & Vergleich",
+    "subtitle": "Menyatakan kesukaan dan membandingkan",
+    "summary": "gern (suka) punya bentuk tingkatan yang tidak beraturan: gern → lieber → am liebsten. Untuk membandingkan dua hal dipakai bentuk komparatif + als, atau so … wie untuk \"sama … dengan\".",
+    "sections": [
+      {
+        "heading": "Tingkatan",
+        "table": {
+          "head": ["Dasar", "Komparatif", "Superlatif"],
+          "rows": [
+            ["gern", "lieber", "am liebsten"],
+            ["gut", "besser", "am besten"],
+            ["viel", "mehr", "am meisten"],
+            ["groß", "größer", "am größten"],
+            ["alt", "älter", "am ältesten"],
+            ["schnell", "schneller", "am schnellsten"]
+          ]
+        },
+        "examples": [
+          { "de": "Ich trinke gern Tee, lieber Kaffee und am liebsten Saft.", "meaning": "Saya suka teh, lebih suka kopi, dan paling suka jus." },
+          { "de": "Berlin ist größer als München.", "meaning": "Berlin lebih besar daripada München." },
+          { "de": "Mein Bruder ist so groß wie ich.", "meaning": "Saudara laki-laki saya sama tinggi dengan saya." }
+        ]
+      }
+    ],
+    "tip": "als untuk \"lebih … daripada\", wie untuk \"sama … dengan\". Jangan tertukar!",
+    "exercises": [
+      { "prompt": "Ich trinke gern Tee, aber ___ Kaffee.", "choices": ["lieber", "gerner", "mehr gern"], "answer": 0, "explain": "gern → lieber (tidak beraturan)." },
+      { "prompt": "Am ___ esse ich Pizza.", "choices": ["liebsten", "liebste", "gernsten"], "answer": 0, "explain": "Superlatif dari gern: am liebsten." },
+      { "prompt": "Berlin ist größer ___ Bonn.", "choices": ["als", "wie", "dann"], "answer": 0, "explain": "Komparatif + als." },
+      { "prompt": "Das Wetter ist heute ___ als gestern. (gut)", "choices": ["besser", "guter", "mehr gut"], "answer": 0, "explain": "gut → besser." },
+      { "prompt": "Mein Bruder ist so groß ___ ich.", "choices": ["wie", "als", "dann"], "answer": 0, "explain": "so … wie = sama … dengan." },
+      { "prompt": "Wer ist am ___? (alt)", "choices": ["ältesten", "altesten", "älteren"], "answer": 0, "explain": "alt → am ältesten." }
     ]
   }
 ]
