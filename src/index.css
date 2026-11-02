@@ -1,0 +1,227 @@
+@import 'tailwindcss';
+
+/* Dark mode follows a `.dark` class on <html>, set before first paint by the
+   inline script in index.html and toggled by ThemeToggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Semantic tokens. Components only ever use these names (bg-surface, text-muted,
+ * text-der …), and the raw values swap under `.dark`, so no component needs a
+ * `dark:` variant for ordinary colors.
+ *
+ * Palette: Schwarz-Rot-Gold used sparingly — charcoal ink for structure, gold as
+ * the accent, and red kept mostly for `die` so the gender colors stay legible.
+ */
+:root {
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --surface-2: #f3f0e9;
+  --line: #e4dfd4;
+  --text: #1c1b1f;
+  --muted: #5d5a54;
+  --ink: #1c1b1f;
+  --ink-fg: #faf8f4;
+  --accent: #f2b630;
+  --accent-strong: #a86f00;
+  --accent-soft: #fdf3dc;
+  --flag-black: #1c1b1f;
+  --flag-red: #d62e2e;
+
+  --der: #2563eb;
+  --der-soft: #e8efff;
+  --die: #d62e2e;
+  --die-soft: #fdecec;
+  --das: #16a34a;
+  --das-soft: #e7f7ec;
+
+  --ok: #0f9f6e;
+  --ok-soft: #e6f7f0;
+  --warn: #c2410c;
+  --warn-soft: #fff1e8;
+
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #131215;
+  --surface: #1c1b20;
+  --surface-2: #26252b;
+  --line: #34323a;
+  --text: #f1eee8;
+  --muted: #a8a39a;
+  --ink: #f1eee8;
+  --ink-fg: #131215;
+  --accent: #f5c451;
+  --accent-strong: #f5c451;
+  --accent-soft: #3a2f14;
+  --flag-black: #45434b;
+  --flag-red: #ef5350;
+
+  --der: #6b9bff;
+  --der-soft: #1b2744;
+  --die: #ff6b6b;
+  --die-soft: #3d1d1f;
+  --das: #4ade80;
+  --das-soft: #163323;
+
+  --ok: #34d399;
+  --ok-soft: #12302a;
+  --warn: #fb923c;
+  --warn-soft: #3a2314;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-ink: var(--ink);
+  --color-ink-fg: var(--ink-fg);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-flag-black: var(--flag-black);
+  --color-flag-red: var(--flag-red);
+
+  --color-der: var(--der);
+  --color-der-soft: var(--der-soft);
+  --color-die: var(--die);
+  --color-die-soft: var(--die-soft);
+  --color-das: var(--das);
+  --color-das-soft: var(--das-soft);
+
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+}
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --radius-card: 1rem;
+
+  --shadow-soft: 0 1px 2px rgb(28 27 31 / 0.05), 0 8px 24px -12px rgb(28 27 31 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(28 27 31 / 0.08), 0 16px 32px -16px rgb(28 27 31 / 0.26);
+
+  --animate-fade-up: fade-up 0.5s ease-out both;
+  --animate-pulse-ring: pulse-ring 1.4s ease-out infinite;
+  --animate-shake: shake 0.35s ease-in-out;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgb(242 182 48 / 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 14px rgb(242 182 48 / 0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: none;
+    }
+    25% {
+      transform: translateX(-6px);
+    }
+    75% {
+      transform: translateX(6px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-strong;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* 3D flip primitives for the flashcard */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  /* Keeps content clear of the mobile bottom nav */
+  .pb-nav {
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+
+  /* The three flag stripes, used as a thin rule under the navbar and in the hero */
+  .flag-rule {
+    background: linear-gradient(
+      to right,
+      var(--flag-black) 0 33.3%,
+      var(--flag-red) 33.3% 66.6%,
+      var(--accent) 66.6% 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

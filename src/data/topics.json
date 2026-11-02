@@ -1,0 +1,17 @@
+[
+  {"id":"begruessung","de":"Begrüßung & Vorstellung","meaning":"Salam & perkenalan","icon":"👋"},
+  {"id":"zahlen","de":"Zahlen","meaning":"Angka","icon":"🔢"},
+  {"id":"zeit","de":"Zeit & Kalender","meaning":"Waktu, hari & bulan","icon":"🕒"},
+  {"id":"familie","de":"Familie & Menschen","meaning":"Keluarga & orang","icon":"👪"},
+  {"id":"essen","de":"Essen & Trinken","meaning":"Makanan & minuman","icon":"🥨"},
+  {"id":"wohnen","de":"Wohnen","meaning":"Rumah & tempat tinggal","icon":"🏠"},
+  {"id":"stadt","de":"Stadt & Verkehr","meaning":"Kota & transportasi","icon":"🚋"},
+  {"id":"einkaufen","de":"Einkaufen & Kleidung","meaning":"Belanja & pakaian","icon":"🛍️"},
+  {"id":"arbeit","de":"Arbeit & Lernen","meaning":"Kerja & sekolah","icon":"💼"},
+  {"id":"freizeit","de":"Freizeit & Hobbys","meaning":"Waktu luang & hobi","icon":"⚽"},
+  {"id":"koerper","de":"Körper & Gesundheit","meaning":"Tubuh & kesehatan","icon":"🩺"},
+  {"id":"wetter","de":"Wetter & Jahreszeiten","meaning":"Cuaca & musim","icon":"🌦️"},
+  {"id":"reisen","de":"Reisen","meaning":"Perjalanan & liburan","icon":"✈️"},
+  {"id":"beschreiben","de":"Farben & Eigenschaften","meaning":"Warna & sifat","icon":"🎨"},
+  {"id":"alltag","de":"Wichtige Wörter","meaning":"Kata tanya & kata penting","icon":"💬"}
+]
