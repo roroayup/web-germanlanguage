@@ -111,12 +111,9 @@ dan id ganda.
 `firebase.json` sudah dikonfigurasi: SPA rewrites (supaya refresh di `/vokabeln` tetap
 jalan), cache panjang untuk aset ber-hash, dan `no-cache` untuk `index.html`.
 
-```bash
-npm run build
-firebase login
-firebase projects:create <project-id>   # atau pakai project yang sudah ada
-firebase use --add                      # membuat .firebaserc
-firebase deploy --only hosting
-```
+Live di **https://deutsch-mit-ru.web.app** (project `portfolio-german`, site `deutsch-mit-ru`).
+Repo sudah terhubung lewat `.firebaserc` dan `"site"` di `firebase.json`, jadi update cukup:
 
-Sebelum deploy, perbarui URL GitHub di `src/lib/site.js`.
+```bash
+npm run build && firebase deploy --only hosting
+```
