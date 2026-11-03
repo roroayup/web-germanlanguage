@@ -7,7 +7,12 @@ export function Footer() {
         <p>
           <span className="font-semibold text-text">{SITE.name}</span> · {SITE.byline} — dibuat oleh {SITE.author}
         </p>
-        <p lang="de">Viel Erfolg beim Deutschlernen! 🇩🇪</p>
+        <p className="flex items-center gap-4">
+          <a href={SITE.github} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-text">
+            Kode sumber
+          </a>
+          <span lang="de">Viel Erfolg beim Deutschlernen! 🇩🇪</span>
+        </p>
       </div>
     </footer>
   )
